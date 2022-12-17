@@ -29,8 +29,8 @@ impl Bitcoin for BitcoinService {
     }
 }
 
-[tokio::main]
-fn main() -> Result<(), Box<dyn std::error::Error>> {
+#[tokio::main]
+async fn main() -> Result<(), Box<dyn std::error::Error>> {
     let addr = "[::1]:50051".parse()?;
     let btc_service = BitcoinService::default();
 

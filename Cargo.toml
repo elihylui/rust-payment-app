@@ -16,7 +16,7 @@ path = "src/client.rs"
 [dependencies]
 tonic = "0.7" # gPRC implementation for Rust
 prost = "0.10" # protocal buffer implementation for Rust
-tokio = { version = "1.0", features = ["marcos", "rt-multi-thread"] }
+tokio = { version = "1.0", features = ["macros", "rt-multi-thread"] }
 
 [build-dependencies]
 tonic-build = "0.7"
